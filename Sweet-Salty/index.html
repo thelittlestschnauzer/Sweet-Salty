@@ -13,116 +13,59 @@
   </head>
   <body>
 
-<!-- NOTE: This is the off-canvas menu that appears when you click on the hamburger menu on smaller screens. Everything in the `.off-canvas` div belongs in `src/layouts/default.html`. Copy this section into the `default.html` file and remove it from this file.  -->
-<div class="off-canvas ecommerce-header-off-canvas position-left" id="ecommerce-header" data-off-canvas>
+  
 
-  <!-- Close button -->
-  <button class="close-button" aria-label="Close menu" type="button" data-close>
-    <span aria-hidden="true">&times;</span>
-  </button>
+
+    <!-- NOTE: This is the off-canvas menu that appears when you click on the hamburger menu on smaller screens. Everything in the `.off-canvas` div belongs in `src/layouts/default.html`. Copy this section into the `default.html` file and remove it from this file.  -->
+    <div class="off-canvas ecommerce-header-off-canvas position-left" id="ecommerce-header" data-off-canvas>
+
+      <!-- Close button -->
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+      
+      <hr>
+      
+    </div>
   
-  <hr>
-  
-</div>
-  
-  <!-- NOTE: This is the header menu that appears at the top of your site. -->
-  <div class="off-canvas-content" data-off-canvas-content>
-    <div class="ecommerce-header-top show-for-large">
-      <div class="row align-justify">
-        <div class="ecommerce-header-top-message">
-          <ul>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>        
-          </ul>  
+    <!-- NOTE: This is the header menu that appears at the top of your site. -->
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="ecommerce-header-top show-for-large">
+        <div class="row align-justify">
+          <div class="ecommerce-header-top-message">
+            <ul>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>        
+            </ul>  
+          </div>
+          <div class="ecommerce-header-top-links" style="float: right;">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="ecommerce-header-top-links" style="float: right;">
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+      </div>
+      <header class="portfolio-hero-header">
+                  <img class="portfolio-hero-header-logo" src="../img/Sweet&Salty.png" />
+                </header>
+             
+    
+      <div class="ecommerce-header-mobile hide-for-large">
+        <div class="ecommerce-header-mobile-left">
+          <button class="menu-icon" type="button" data-toggle="ecommerce-header"></button>
         </div>
+        <div class="ecommerce-header-mobile-center">
+          <a href="#"><img class="logo" src="Sweet-Salty/img/SaltySweetlogo.png" style="height:30px; width:130;"></a>
+        </div>
+        
       </div>
     </div>
-  
-  
-    <div class="ecommerce-header-mobile hide-for-large">
-      <div class="ecommerce-header-mobile-left">
-        <button class="menu-icon" type="button" data-toggle="ecommerce-header"></button>
-        <form class="ecommerce-header-search-exandable">
-          <input type="search" placeholder="Search">
-        </form>
-      </div>
-      <div class="ecommerce-header-mobile-center">
-        <a href="#"><img class="logo" src="Sweet-Salty/img/SaltySweetlogo.png" style="height:30px; width:130;"></a>
-      </div>
-      <div class="ecommerce-header-mobile-right">
-        <i class="fa fa-shopping-cart"></i>
-      </div>
-    </div>
-  </div>
-  
-  
-
-
-
-
-
-<!-- NOTE: This is the header menu that appears at the top of your site. -->
-<!-- <div class="off-canvas-content" data-off-canvas-content>
-  <div class="ecommerce-header-top show-for-large">
-    <div class="row align-justify">
-        <ul class="ecommerce-header-top-message">
-          <li class="social-icon">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li class="social-icon">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-        </ul> 
-
-      <div class="ecommerce-header-top-links">
-        <ul>
-           <li><a href="#">WORK</a></li>
-           <li><a href="#">ABOUT US</a></li>
-           <li><a href="#">CONTACT</a></li>
-        </ul> -->
-      <!-- </div><!-- ecommerce-header-top-links ends -->
-    <!-- </div>row ends -->
-  <!-- </div>ecommerce-header-top show-for-large ends -->
-<!-- </div> -->
-    <!-- mobile nav bar -->
-<div class="title-bar topbar-center-logo-mobile" data-responsive-toggle="topbar-center-logo" data-hide-for="medium">
-    <div class="title-bar-left">
-      <div class="title-bar-title"><img src="https://placehold.it/100x39" alt="" /></div>
-    </div>
-    <div class="title-bar-right">
-      <button class="menu-icon" type="button" data-toggle="topbar-center-logo"></button>
-    </div>
-  </div>
-  <!-- /mobile nav bar -->
-  
-  <!-- medium and larger nav bar -->
-  <div class="top-bar topbar-center-logo" id="topbar-center-logo">
-    <div class="top-bar-left">
-      <ul class="menu vertical medium-horizontal">
-        <li><a href="#">Contact</a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-      </ul>
-    </div>
-    <div class="top-bar-center">
-      <a href="#"><img src="img/SaltySweetlogo.png" style="height: 300px; width: 300px" alt="" /></a>
-    </div>
-    <div class="top-bar-right">
-      <ul class="menu vertical medium-horizontal">
-        <li><a href="#"></a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-      </ul>
-    </div>
-  </div>
-  <!-- /medium and larger nav bar -->
+    <div class="hero-section">
+      <div class="hero-section-text">
+      </div><!-- hero-section-text ends -->
+    </div><!-- hero-section ends -->
   
     
     <script src="js/vendor/jquery.js"></script>

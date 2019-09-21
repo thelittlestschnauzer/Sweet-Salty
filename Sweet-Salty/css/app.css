@@ -3,6 +3,14 @@ body {
   color: #213038;
 }
 
+html {
+  background: url('../img/alex-loup-aV9qf-Zy3E0-unsplash.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .ecommerce-header .nav-links {
   margin-left: 15px;
 }
@@ -35,9 +43,10 @@ body {
 
 .ecommerce-header-top {
   width: 100%;
-  background-color: #fff;
+  background-color: transparent;
   height: 40px;
   padding: 8px 20px 10px 20px;
+  z-index: 999;
 }
 
 .ecommerce-header-top .fab {
@@ -153,4 +162,17 @@ body {
 .ecommerce-header-mobile-right .fab {
   color: #fefefe;
   font-size: 1.5rem;
+}
+
+.portfolio-hero-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -90px;
 }
